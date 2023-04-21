@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  gismeteo-parser:
+    restart: unless-stopped
+    build:
+      context: .
+    command: [ --inf ]
+    volumes:
+      - "./data/gismeteo:/app/data"

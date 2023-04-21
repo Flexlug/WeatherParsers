@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  meteoinfo-parser:
+    restart: unless-stopped
+    build:
+      context: ./meteoinfo
+    volumes:
+      - "./data/meteoinfo:/app/data"
+
+  gismeteo-parser:
+    restart: unless-stopped
+    build:
+      context: ./gismeteoParser
+    command: [ --inf ]
+    volumes:
+      - "./data/gismeteo:/app/data"
+
+  rp5-parser:
+    restart: unless-stopped
+    build:
+      context: ./rp5Parser
+    command: [ --inf ]
+    volumes:
+      - "./data/rp5:/app/data"

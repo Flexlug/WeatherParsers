@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  rp5-parser:
+    restart: unless-stopped
+    build:
+      context: .
+    command: [ --inf ]
+    volumes:
+      - "./data/rp5:/app/data"
