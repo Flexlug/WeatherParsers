@@ -9,7 +9,7 @@
 # Требования
 - Docker
 
-# Деплой
+# Запуск
 ```docker
 docker compose up -d
 ```
