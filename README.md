@@ -29,3 +29,11 @@
 docker compose up -d
 ```
 Результаты парсинга будут автоматически складываться в указанной директории.
+
+# Описание данных некоторых ресурсов
+
+![scheme-1](https://raw.githubusercontent.com/Flexlug/WeatherParsers/main/scheme-01.jpg)
+
+# Описание схемы возможной БД
+
+![scheme-2](https://raw.githubusercontent.com/Flexlug/WeatherParsers/main/scheme-02.jpg)
